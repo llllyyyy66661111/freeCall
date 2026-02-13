@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+freeswitch:
+  host: ${FS_HOST:127.0.0.1}
+  port: ${FS_PORT:8021}
+  password: ${FS_PASSWORD:ClueCon}
+  timeout-seconds: ${FS_TIMEOUT_SECONDS:10}
