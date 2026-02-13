@@ -1,0 +1,17 @@
+<include>
+  <extension name="freecall-echo">
+    <condition field="destination_number" expression="^9196$">
+      <action application="answer"/>
+      <action application="sleep" data="500"/>
+      <action application="echo"/>
+    </condition>
+  </extension>
+
+  <extension name="freecall-playback">
+    <condition field="destination_number" expression="^9200$">
+      <action application="answer"/>
+      <action application="playback" data="ivr/ivr-welcome_to_freeswitch.wav"/>
+      <action application="hangup"/>
+    </condition>
+  </extension>
+</include>
